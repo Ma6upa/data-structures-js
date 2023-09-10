@@ -95,7 +95,7 @@ class BST {
         if (node.right == null) {
           return node.left;
         }
-        var tempNode = node.right;
+        let tempNode = node.right;
         while (tempNode.left !== null) {
           tempNode = tempNode.left;
         }
@@ -143,7 +143,7 @@ class BST {
     if (this.root == null) {
       return null;
     } else {
-      var result = new Array();
+      let result = new Array();
       function traverseInOrder(node) {
         node.left && traverseInOrder(node.left);
         result.push(node.data);
@@ -157,7 +157,7 @@ class BST {
     if (this.root == null) {
       return null;
     } else {
-      var result = new Array();
+      let result = new Array();
       function traversePreOrder(node) {
         result.push(node.data);
         node.left && traversePreOrder(node.left);
@@ -171,7 +171,7 @@ class BST {
     if (this.root == null) {
       return null;
     } else {
-      var result = new Array();
+      let result = new Array();
       function traversePostOrder(node) {
         node.left && traversePostOrder(node.left);
         node.right && traversePostOrder(node.right);
